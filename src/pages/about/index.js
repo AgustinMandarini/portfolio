@@ -2,12 +2,10 @@ import React from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Row, Col, Card, Container } from "react-bootstrap";
-import {
-  dataabout,
-  meta,
-  worktimeline,
-  skills,
-} from "../../content_option";
+import { dataabout, meta, worktimeline, skills } from "../../content_option";
+import Marquee from "react-fast-marquee";
+import { skillsData } from "./SkillsData";
+import { skillsImage } from "./SkillsImage";
 
 export const About = () => {
   return (
@@ -18,9 +16,9 @@ export const About = () => {
           <title> About | {meta.title}</title>
           <meta name="description" content={meta.description} />
         </Helmet>
-        <Row className="mb-5 mt-3 pt-md-3">
+        <Row className="mb-1 mt-1 pt-md-3">
           <Col lg="8">
-            <h1 className="display-4 mb-4">About me</h1>
+            <h2 className="display-4 mb-4">About me</h2>
             <hr className="t_border my-4 ml-0 text-left" />
           </Col>
         </Row>
@@ -31,6 +29,7 @@ export const About = () => {
           <Col lg="7" className="d-flex align-items-center">
             <div>
               <p>{dataabout.aboutme}</p>
+              <p>{dataabout.myInterests}</p>
             </div>
           </Col>
         </Row>
@@ -54,23 +53,33 @@ export const About = () => {
             </table>
           </Col>
         </Row>
-        <Row className="sec_sp">
+        <Row className=" sec_sp">
           <Col lg="5">
             <h3 className="color_sec py-4">Skills</h3>
           </Col>
-          <Col lg="7" className="grid-container">
-            {skills.map((skills, i) => {
-              return (
-                <div key={i}>
-                  <Card className="skill-card">
-                    <Card.Body>
-                      <h3 className="card-title">{skills.name}</h3>
-                    </Card.Body>
-                  </Card>
-                </div>
-              );
-            })}
-          </Col>
+          <div className="skillsContainer">
+            <div className="skillScroll">
+              <Marquee
+                gradient={false}
+                speed={50}
+                pauseOnClick={true}
+                delay={0}
+                play={true}
+                direction="right"
+              >
+                {skillsData.map((skill, id) => (
+                  <div className="skillBox" key={id}>
+                    <img
+                      className="skillImage"
+                      src={skillsImage(skill)}
+                      alt={skill}
+                    />
+                    <p className="p">{skill}</p>
+                  </div>
+                ))}
+              </Marquee>
+            </div>
+          </div>
         </Row>
       </Container>
     </HelmetProvider>

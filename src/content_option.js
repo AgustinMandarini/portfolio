@@ -1,163 +1,124 @@
-const logotext = "{Initials Here}";
+const logotext = "Agustin Mandarini";
 const meta = {
-    title: "{Your name}",
-    description: "I'm {Your name}, a technologist and cybersecurity enthuist.",
+  title: "Agustin Mandarini",
+  description:
+    "I'm Agustin Mandarini, a developer and a neverending seeker of innovative, simple and creative solutions.",
 };
 
 const introdata = {
-    title: "Hi, I'm {Your Name}",
-    animated: {
-        first: "Technologist",
-        second: "Visionary",
-        third: "Ethical Hacker",
-        fourth: "Programmer",
-        fifth: "Malware Developer",
-        sixth: "Analyst",
-        // add more if you'd like but make sure to update /src/pages/home/index.js Line 29
-    },
-    description: "Dedicated technology enthusiast with an insatiable curiosity for unraveling the complexities of our digital world.",
-    your_img_url: "https://i.ibb.co/wRjcnGL/me.jpg",
+  title: "Hi, I'm Agustin Mandarini",
+  animated: {
+    first: "Fullstack Developer",
+    second: "Analyst",
+    third: "Devoted Programmer",
+    fourth: "Team Player",
+    fifth: "Fullstack Developer",
+    // add more if you'd like but make sure to update /src/pages/home/index.js Line 29
+  },
+  description:
+    "I'm a dedicated developer with an insatiable curiosity, and genuine passion for fostering robust team relationships. Aspiring to lead teams while participating in the intricacies of business tech solutions is my ultimate goal.",
+  your_img_url: "./img/agustin_guitarra.jpg",
 };
 
 const dataabout = {
-    title: "Who am I?",
-    aboutme: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  title: "Who am I?",
+  aboutme: `I am a Fullstack Developer and a passionate, goal-oriented individual. When taking on new projects, I actively work to create collaborative work environments, foster unity, synergy, and strong interpersonal relationships within the team to produce excellent code and end products.`,
+  myInterests: `My Interests:
+    Professionally, I'm interested in contributing to innovative projects that offer simple and efficient solutions for clients. I seek to continually learn new technologies and implement novel software architectures and design patterns.
+    
+    Personally, I have an interest in nature, the mountains, healthy living, nurturing meaningful relationships, and sharing my life with family and friends.`,
 };
-const worktimeline = [{
-        jobtitle: "Example 1",
-        where: "Google",
-        date: "2023",
-    },
-    {
-        jobtitle: "Example 2",
-        where: "Micosoft",
-        date: "2022",
-    },
-    {
-        jobtitle: "Example 3",
-        where: "Meta",
-        date: "2021",
-    },
+const worktimeline = [
+  {
+    jobtitle: "Electronic Security Technician",
+    where: "Ejército Argentino (Army)",
+    date: "2016 to 2023",
+  },
+  {
+    jobtitle: "Student Teaching Assistant",
+    where: "Soy Henry",
+    date: "2023",
+  },
+  {
+    jobtitle: "MSC Amoblamientos E-Commerce",
+    where: "Soy Henry",
+    date: "2023",
+  },
+  {
+    jobtitle: "Python Developer",
+    where: "Baldor SRL",
+    date: "2023",
+  },
 ];
 
-const skills = [{
-        name: "Python",
-    },
-    
-    {
-        name: "C",
-    },
-    
-    {
-        name: "Java",
-    },
-    
-    {
-        name: "Bash",
-    },
+const skills = [
+  {
+    name: "Javascript",
+  },
 
-    {
-        name: "Powershell",
-    },
+  {
+    name: "Node",
+  },
 
-    {
-        name: "Reverse Engineering",
-    },
+  {
+    name: "React",
+  },
 
-    {
-        name: "Web-Exploitation",
-    },
+  {
+    name: "Redux",
+  },
+  {
+    name: "Postgres",
+  },
 
-    {
-        name: "Network Exploitation",
-    },
+  {
+    name: "Python",
+  },
 ];
 
-const dataportfolio = [{
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/800/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/600/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/300/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/700/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-
-    {
-        img: "https://picsum.photos/400/600/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/300/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/550/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
-    {
-        img: "https://picsum.photos/400/700/?grayscale",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
-    },
+const dataportfolio = [
+  {
+    img: "./img/msc_amoblamientos_portada.png",
+    description:
+      "MSC Amoblamientos is an ecommerce platform build for an independent entrepreneur and has all basic functiontalities of a SAAS proyect.",
+    link: "https://msc-amoblamientos.vercel.app/",
+  },
+  {
+    img: "./img/doggypedia.png",
+    description:
+      "Search for up to 246 dogs breeds by consuming an external API",
+    link: "https://doggypedia-nu.vercel.app/",
+  },
+  {
+    img: "./img/rugit_imagen.jpeg",
+    description:
+      "DataLogger software for Baldor SRL's Rugit sound level meter equipment. This is a desktop proyect developed on Python.",
+    link: "https://github.com/AgustinMandarini/Vibrac",
+  },
 ];
 
 const contactConfig = {
-    YOUR_EMAIL: "test@test.com",
-    description: "Looking forward to hearing from you!",
-    // creat an emailjs.com account 
-    // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
-    YOUR_SERVICE_ID: "SERVICE_ID",
-    YOUR_TEMPLATE_ID: "TEMPLATE_ID",
-    YOUR_USER_ID: "USER_ID (PUBLIC_KEY)",
+  YOUR_EMAIL: "agustinmandarini47@gmail.com",
+  description: "Looking forward to hearing from you!",
+  // creat an emailjs.com account
+  // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
+  YOUR_SERVICE_ID: process.env.REACT_APP_YOUR_SERVICE_ID,
+  YOUR_TEMPLATE_ID: process.env.REACT_APP_YOUR_TEMPLATE_ID,
+  YOUR_USER_ID: process.env.REACT_APP_YOUR_USER_ID,
 };
 
 const socialprofils = {
-    github: "https://github.com/",
-    linkedin: "https://linkedin.com/",
+  github: "https://github.com/AgustinMandarini",
+  linkedin: "https://www.linkedin.com/in/agustin-mandarini-8a73a4225/",
 };
 export {
-    meta,
-    dataabout,
-    dataportfolio,
-    worktimeline,
-    skills,
-    introdata,
-    contactConfig,
-    socialprofils,
-    logotext,
+  meta,
+  dataabout,
+  dataportfolio,
+  worktimeline,
+  skills,
+  introdata,
+  contactConfig,
+  socialprofils,
+  logotext,
 };
