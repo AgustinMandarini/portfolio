@@ -37,6 +37,11 @@ section {
   margin-top: -60px;
 }
 
+.h_bg-image {
+  -webkit-filter: grayscale(80%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(80%);
+}
+
 @media (max-width: 991.98px) {
   .intro_sec {
     display: block;
