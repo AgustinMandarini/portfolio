@@ -32,22 +32,22 @@ const worktimeline = [
   {
     jobtitle: "Electronic Security Technician",
     where: "Ejército Argentino (Army)",
-    date: "2016 to 2023",
+    date: "2015 to present",
   },
   {
     jobtitle: "Student Teaching Assistant",
     where: "Soy Henry",
-    date: "2023",
+    date: "Aug 2023 to present",
   },
   {
-    jobtitle: "MSC Amoblamientos E-Commerce",
-    where: "Soy Henry",
-    date: "2023",
+    jobtitle: "Fullstack javascript developer",
+    where: "MSC Amoblamientos",
+    date: "Aug 2023 to Nov 2023",
   },
   {
     jobtitle: "Python Developer",
     where: "Baldor SRL",
-    date: "2023",
+    date: "2022 to present",
   },
 ];
 
