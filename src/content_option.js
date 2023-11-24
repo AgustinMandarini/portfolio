@@ -35,6 +35,11 @@ const worktimeline = [
     date: "2015 to present",
   },
   {
+    jobtitle: "Python Developer",
+    where: "Baldor SRL",
+    date: "2022 to present",
+  },
+  {
     jobtitle: "Student Teaching Assistant",
     where: "Soy Henry",
     date: "Aug 2023 to present",
@@ -43,11 +48,6 @@ const worktimeline = [
     jobtitle: "Fullstack javascript developer",
     where: "MSC Amoblamientos",
     date: "Aug 2023 to Nov 2023",
-  },
-  {
-    jobtitle: "Python Developer",
-    where: "Baldor SRL",
-    date: "2022 to present",
   },
 ];
 
